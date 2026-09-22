@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Astra Robotics | Intelligent Automation & Robotics</title>
+    <meta name="description" content="Astra Robotics designs intelligent robotic, automation, machine vision, and embedded systems for complex engineering challenges." />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Astra Robotics | Intelligent Automation & Robotics" />
+    <meta property="og:description" content="Astra Robotics designs intelligent robotic, automation, machine vision, and embedded systems for complex engineering challenges." />
+    <meta property="og:image" content="/assets/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#hero" class="nav__logo" aria-label="Astra Robotics — home">
+          <svg class="nav__logo-mark" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 2 L28 28 L16 22 L4 28 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+            <circle cx="16" cy="16" r="2.5" fill="currentColor"/>
+            <path d="M16 18.5 L16 22" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span class="nav__wordmark">ASTRA <span class="nav__wordmark-accent">ROBOTICS</span></span>
+        </a>
+
+        <nav class="nav__links" id="navLinks" aria-label="Primary navigation">
+          <a href="#solutions" class="nav__link">Solutions</a>
+          <a href="#technology" class="nav__link">Technology</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#contact" class="nav__link">Contact</a>
+          <a href="#contact" class="btn btn--outline btn--sm nav__cta">Start a Project</a>
+        </nav>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="nav__backdrop" id="navBackdrop" hidden></div>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="hero">
+        <div class="hero__grid-bg" aria-hidden="true"></div>
+        <div class="hero__inner">
+          <div class="hero__content">
+            <span class="hero__eyebrow mono">ASTRA ROBOTICS / ENGINEERING SYSTEMS</span>
+            <h1 class="hero__title">Engineering Intelligence Into Motion.</h1>
+            <p class="hero__desc">Astra Robotics designs intelligent robotic and automation systems that turn complex physical processes into precise, repeatable performance.</p>
+            <div class="hero__actions">
+              <a href="#solutions" class="btn btn--primary">Explore Our Solutions</a>
+              <a href="#contact" class="btn btn--outline">Start a Project</a>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <svg class="hero__svg" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="heroGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M40 0 L0 0 0 40" stroke="rgba(255,255,255,0.04)" stroke-width="1" fill="none"/>
+                </pattern>
+                <linearGradient id="armGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#3a3f4b"/>
+                  <stop offset="100%" stop-color="#1a1d24"/>
+                </linearGradient>
+              </defs>
+              <rect width="520" height="520" fill="url(#heroGrid)"/>
+
+              <!-- base -->
+              <rect x="200" y="420" width="120" height="20" rx="3" fill="#2a2d35" stroke="#3a3f4b" stroke-width="1.5"/>
+              <rect x="220" y="400" width="80" height="20" rx="3" fill="#2a2d35" stroke="#3a3f4b" stroke-width="1.5"/>
+
+              <!-- arm segment 1 (vertical) -->
+              <g class="hero__arm-seg hero__arm-seg--1">
+                <rect x="245" y="290" width="30" height="120" rx="4" fill="url(#armGrad)" stroke="#4a4f5b" stroke-width="1.5"/>
+                <circle cx="260" cy="290" r="10" fill="#1a1d24" stroke="#5a5f6b" stroke-width="1.5"/>
+                <circle cx="260" cy="290" r="3" fill="#00d4aa"/>
+              </g>
+
+              <!-- arm segment 2 (angled) -->
+              <g class="hero__arm-seg hero__arm-seg--2">
+                <rect x="-12" y="-90" width="24" height="90" rx="4" fill="url(#armGrad)" stroke="#4a4f5b" stroke-width="1.5" transform="rotate(35)"/>
+                <circle cx="0" cy="0" r="8" fill="#1a1d24" stroke="#5a5f6b" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="2.5" fill="#00d4aa"/>
+              </g>
+
+              <!-- arm segment 3 (end effector) -->
+              <g class="hero__arm-seg hero__arm-seg--3">
+                <rect x="-8" y="-50" width="16" height="50" rx="3" fill="#2a2d35" stroke="#4a4f5b" stroke-width="1.5"/>
+                <path d="M-8 -50 L0 -62 L8 -50" fill="#2a2d35" stroke="#4a4f5b" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="0" cy="0" r="6" fill="#1a1d24" stroke="#5a5f6b" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="2" fill="#00d4aa"/>
+              </g>
+
+              <!-- annotation lines -->
+              <g class="hero__annotations" stroke="#4a4f5b" stroke-width="1" fill="none">
+                <line x1="335" y1="230" x2="420" y2="180" stroke-dasharray="3 3"/>
+                <line x1="260" y1="290" x2="120" y2="240" stroke-dasharray="3 3"/>
+                <line x1="260" y1="420" x2="260" y2="470" stroke-dasharray="3 3"/>
+              </g>
+
+              <!-- signal dots -->
+              <circle class="hero__signal hero__signal--1" cx="260" cy="290" r="2" fill="#00d4aa" opacity="0"/>
+              <circle class="hero__signal hero__signal--2" cx="335" cy="230" r="2" fill="#00d4aa" opacity="0"/>
+              <circle class="hero__signal hero__signal--3" cx="260" cy="420" r="2" fill="#00d4aa" opacity="0"/>
+            </svg>
+
+            <dl class="hero__labels">
+              <div class="hero__label">
+                <dt class="hero__label-key mono">SYSTEM STATUS</dt>
+                <dd class="hero__label-val mono"><span class="hero__status-dot" aria-hidden="true"></span>ONLINE</dd>
+              </div>
+              <div class="hero__label">
+                <dt class="hero__label-key mono">PRECISION</dt>
+                <dd class="hero__label-val mono">±0.02 mm</dd>
+              </div>
+              <div class="hero__label">
+                <dt class="hero__label-key mono">UPTIME</dt>
+                <dd class="hero__label-val mono">99.8%</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="hero__scroll-hint" aria-hidden="true">
+          <span class="mono">SCROLL</span>
+          <span class="hero__scroll-line"></span>
+        </div>
+      </section>
+
+      <!-- ============ TRUST STRIP ============ -->
+      <section class="trust" aria-label="Core capabilities">
+        <div class="container">
+          <p class="trust__heading mono">BUILT FOR COMPLEX PROBLEMS</p>
+          <ul class="trust__list">
+            <li>Robotics</li>
+            <li>Automation</li>
+            <li>Machine Vision</li>
+            <li>Embedded Systems</li>
+            <li>Industrial Intelligence</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ SOLUTIONS ============ -->
+      <section class="section solutions" id="solutions">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__num mono">01</span>
+            <h2 class="section__title">Automation Without Compromise.</h2>
+            <p class="section__desc">From robotic manipulation to intelligent inspection, Astra Robotics combines mechanical systems, embedded control, sensing, and software into complete automation solutions.</p>
+          </div>
+
+          <div class="solutions__grid">
+            <article class="solution-card" data-reveal>
+              <div class="solution-card__top">
+                <span class="solution-card__num mono">01</span>
+                <svg class="solution-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                  <rect x="14" y="22" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <rect x="17" y="10" width="6" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="20" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M20 11 L20 16" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h3 class="solution-card__title">Industrial Robotics</h3>
+              <p class="solution-card__desc">Robotic arms, precision manipulation, pick-and-place systems, and automated material handling.</p>
+              <button class="solution-card__link" type="button" aria-expanded="false" aria-controls="sol-detail-1">Learn more <span class="solution-card__arrow" aria-hidden="true">→</span></button>
+              <div class="solution-card__detail" id="sol-detail-1">
+                <p>Multi-axis robotic manipulators configured for precise, repeatable material handling. Designed for integration into existing production lines with minimal retooling.</p>
+              </div>
+            </article>
+
+            <article class="solution-card" data-reveal>
+              <div class="solution-card__top">
+                <span class="solution-card__num mono">02</span>
+                <svg class="solution-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                  <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M20 6 V12 M20 28 V34 M6 20 H12 M28 20 H34" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M10 10 L14 14 M30 10 L26 14 M10 30 L14 26 M30 30 L26 26" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h3 class="solution-card__title">Intelligent Automation</h3>
+              <p class="solution-card__desc">Custom automation systems designed to reduce repetitive manual processes and improve consistency.</p>
+              <button class="solution-card__link" type="button" aria-expanded="false" aria-controls="sol-detail-2">Learn more <span class="solution-card__arrow" aria-hidden="true">→</span></button>
+              <div class="solution-card__detail" id="sol-detail-2">
+                <p>End-to-end automation pipelines that replace repetitive manual operations with controlled, monitored, and repeatable machine-driven processes.</p>
+              </div>
+            </article>
+
+            <article class="solution-card" data-reveal>
+              <div class="solution-card__top">
+                <span class="solution-card__num mono">03</span>
+                <svg class="solution-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                  <rect x="8" y="12" width="24" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="1.5"/>
+                  <rect x="16" y="8" width="8" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h3 class="solution-card__title">Machine Vision</h3>
+              <p class="solution-card__desc">Vision-based inspection, object detection, dimensional checking, and automated quality control.</p>
+              <button class="solution-card__link" type="button" aria-expanded="false" aria-controls="sol-detail-3">Learn more <span class="solution-card__arrow" aria-hidden="true">→</span></button>
+              <div class="solution-card__detail" id="sol-detail-3">
+                <p>Camera-based inspection systems with real-time defect detection, classification, and dimensional verification integrated into production workflows.</p>
+              </div>
+            </article>
+
+            <article class="solution-card" data-reveal>
+              <div class="solution-card__top">
+                <span class="solution-card__num mono">04</span>
+                <svg class="solution-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                  <rect x="10" y="22" width="20" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="15" cy="32" r="3" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="25" cy="32" r="3" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M14 22 L14 16 H26 V22" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M20 16 V10 M17 10 H23" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h3 class="solution-card__title">Autonomous Systems</h3>
+              <p class="solution-card__desc">Mobile robotic platforms, navigation systems, sensing, and autonomous decision-making.</p>
+              <button class="solution-card__link" type="button" aria-expanded="false" aria-controls="sol-detail-4">Learn more <span class="solution-card__arrow" aria-hidden="true">→</span></button>
+              <div class="solution-card__detail" id="sol-detail-4">
+                <p>Self-navigating mobile platforms with sensor fusion, obstacle avoidance, and autonomous path planning for dynamic industrial environments.</p>
+              </div>
+            </article>
+
+            <article class="solution-card" data-reveal>
+              <div class="solution-card__top">
+                <span class="solution-card__num mono">05</span>
+                <svg class="solution-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                  <rect x="12" y="12" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M12 18 H8 M12 22 H8 M28 18 H32 M28 22 H32 M18 12 V8 M22 12 V8 M18 28 V32 M22 28 V32" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h3 class="solution-card__title">Embedded Control</h3>
+              <p class="solution-card__desc">Real-time control systems using sensors, microcontrollers, actuators, and industrial communication.</p>
+              <button class="solution-card__link" type="button" aria-expanded="false" aria-controls="sol-detail-5">Learn more <span class="solution-card__arrow" aria-hidden="true">→</span></button>
+              <div class="solution-card__detail" id="sol-detail-5">
+                <p>Real-time embedded controllers bridging sensors and actuators with deterministic communication protocols for industrial-grade reliability.</p>
+              </div>
+            </article>
+
+            <article class="solution-card" data-reveal>
+              <div class="solution-card__top">
+                <span class="solution-card__num mono">06</span>
+                <svg class="solution-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                  <path d="M20 8 L30 14 V26 L20 32 L10 26 V14 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <path d="M20 8 V20 M20 20 L30 14 M20 20 L10 14 M20 20 V32" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h3 class="solution-card__title">Custom Robotics</h3>
+              <p class="solution-card__desc">Purpose-built robotic systems engineered around specific operational requirements.</p>
+              <button class="solution-card__link" type="button" aria-expanded="false" aria-controls="sol-detail-6">Learn more <span class="solution-card__arrow" aria-hidden="true">→</span></button>
+              <div class="solution-card__detail" id="sol-detail-6">
+                <p>Bespoke robotic platforms designed from the ground up for unique operational constraints, environments, and performance requirements.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FEATURED TECHNOLOGY ============ -->
+      <section class="section tech-feature" id="technology">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__num mono">02</span>
+            <h2 class="section__title">Where Hardware Meets Intelligence.</h2>
+            <p class="section__desc">Modern robotics requires tight integration between mechanical systems, sensors, embedded controllers, computer vision, control algorithms, software, and communication systems.</p>
+          </div>
+
+          <div class="tech-feature__diagram" data-reveal>
+            <!-- Accessible fallback text -->
+            <p class="tech-feature__sr-only">System architecture flow: Sensors to Perception to Decision to Control to Actuation, with a feedback loop from Actuation back to Sensors.</p>
+            <svg class="tech-diagram" viewBox="0 0 900 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System architecture flow diagram">
+              <!-- connecting lines -->
+              <line x1="90" y1="180" x2="250" y2="180" stroke="#3a3f4b" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <line x1="330" y1="180" x2="490" y2="180" stroke="#3a3f4b" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <line x1="570" y1="180" x2="730" y2="180" stroke="#3a3f4b" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+              <!-- signal flow particles (animated via JS) -->
+              <circle class="tech-diagram__signal" id="signal1" cx="90" cy="180" r="3" fill="#00d4aa" opacity="0"/>
+              <circle class="tech-diagram__signal" id="signal2" cx="330" cy="180" r="3" fill="#00d4aa" opacity="0"/>
+              <circle class="tech-diagram__signal" id="signal3" cx="570" cy="180" r="3" fill="#00d4aa" opacity="0"/>
+
+              <!-- nodes -->
+              <g class="tech-node">
+                <rect x="20" y="145" width="140" height="70" rx="4" fill="#1a1d24" stroke="#3a3f4b" stroke-width="1.5"/>
+                <text x="90" y="175" text-anchor="middle" fill="#e8eaed" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="600">SENSORS</text>
+                <text x="90" y="195" text-anchor="middle" fill="#6b7280" font-family="JetBrains Mono, monospace" font-size="9">INPUT LAYER</text>
+              </g>
+
+              <g class="tech-node">
+                <rect x="180" y="145" width="140" height="70" rx="4" fill="#1a1d24" stroke="#3a3f4b" stroke-width="1.5"/>
+                <text x="250" y="175" text-anchor="middle" fill="#e8eaed" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="600">PERCEPTION</text>
+                <text x="250" y="195" text-anchor="middle" fill="#6b7280" font-family="JetBrains Mono, monospace" font-size="9">PROCESSING</text>
+              </g>
+
+              <g class="tech-node">
+                <rect x="340" y="145" width="140" height="70" rx="4" fill="#1a1d24" stroke="#3a3f4b" stroke-width="1.5"/>
+                <text x="410" y="175" text-anchor="middle" fill="#e8eaed" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="600">DECISION</text>
+                <text x="410" y="195" text-anchor="middle" fill="#6b7280" font-family="JetBrains Mono, monospace" font-size="9">REASONING</text>
+              </g>
+
+              <g class="tech-node">
+                <rect x="500" y="145" width="140" height="70" rx="4" fill="#1a1d24" stroke="#3a3f4b" stroke-width="1.5"/>
+                <text x="570" y="175" text-anchor="middle" fill="#e8eaed" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="600">CONTROL</text>
+                <text x="570" y="195" text-anchor="middle" fill="#6b7280" font-family="JetBrains Mono, monospace" font-size="9">EXECUTION</text>
+              </g>
+
+              <g class="tech-node">
+                <rect x="660" y="145" width="140" height="70" rx="4" fill="#1a1d24" stroke="#00d4aa" stroke-width="1.5"/>
+                <text x="730" y="175" text-anchor="middle" fill="#00d4aa" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="600">ACTUATION</text>
+                <text x="730" y="195" text-anchor="middle" fill="#00d4aa" font-family="JetBrains Mono, monospace" font-size="9" opacity="0.6">OUTPUT</text>
+              </g>
+
+              <!-- feedback loop -->
+              <path d="M730 215 Q730 300 410 300 Q90 300 90 215" stroke="#3a3f4b" stroke-width="1" stroke-dasharray="3 5" fill="none"/>
+              <text x="410" y="320" text-anchor="middle" fill="#6b7280" font-family="JetBrains Mono, monospace" font-size="9">FEEDBACK LOOP</text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TECHNOLOGY STACK ============ -->
+      <section class="section tech-stack">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__num mono">03</span>
+            <h2 class="section__title">Technical Capabilities.</h2>
+            <p class="section__desc">A full-stack engineering approach spanning compute, sensing, control, and software.</p>
+          </div>
+
+          <div class="tech-stack__grid">
+            <div class="tech-stack__col" data-reveal>
+              <h3 class="tech-stack__cat mono">COMPUTE</h3>
+              <ul class="tech-stack__list">
+                <li>Embedded Controllers</li>
+                <li>Edge Computing</li>
+                <li>Industrial PCs</li>
+              </ul>
+            </div>
+            <div class="tech-stack__col" data-reveal>
+              <h3 class="tech-stack__cat mono">SENSING</h3>
+              <ul class="tech-stack__list">
+                <li>Machine Vision</li>
+                <li>Distance Sensors</li>
+                <li>Force / Position Sensing</li>
+                <li>Environmental Sensors</li>
+              </ul>
+            </div>
+            <div class="tech-stack__col" data-reveal>
+              <h3 class="tech-stack__cat mono">CONTROL</h3>
+              <ul class="tech-stack__list">
+                <li>Motion Control</li>
+                <li>Feedback Systems</li>
+                <li>Real-Time Control</li>
+                <li>PID-Based Systems</li>
+              </ul>
+            </div>
+            <div class="tech-stack__col" data-reveal>
+              <h3 class="tech-stack__cat mono">SOFTWARE</h3>
+              <ul class="tech-stack__list">
+                <li>Embedded C/C++</li>
+                <li>Python</li>
+                <li>Computer Vision</li>
+                <li>Web Interfaces</li>
+                <li>Data Systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="section projects" id="projects">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__num mono">04</span>
+            <h2 class="section__title">Selected Engineering Projects.</h2>
+            <p class="section__desc">Representative engineering work across autonomous platforms, vision systems, and precision assembly.</p>
+          </div>
+
+          <div class="projects__list">
+            <article class="project-card" data-reveal data-project="orion">
+              <div class="project-card__visual">
+                <svg viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="600" height="300" fill="#15171c"/>
+                  <pattern id="orionGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+                    <path d="M30 0 L0 0 0 30" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                  </pattern>
+                  <rect width="600" height="300" fill="url(#orionGrid)"/>
+                  <rect x="220" y="170" width="160" height="50" rx="6" fill="#1a1d24" stroke="#3a3f4b" stroke-width="1.5"/>
+                  <circle cx="250" cy="225" r="14" fill="#1a1d24" stroke="#4a4f5b" stroke-width="1.5"/>
+                  <circle cx="250" cy="225" r="6" fill="#2a2d35" stroke="#5a5f6b" stroke-width="1"/>
+                  <circle cx="350" cy="225" r="14" fill="#1a1d24" stroke="#4a4f5b" stroke-width="1.5"/>
+                  <circle cx="350" cy="225" r="6" fill="#2a2d35" stroke="#5a5f6b" stroke-width="1"/>
+                  <rect x="250" y="130" width="100" height="40" rx="4" fill="#1a1d24" stroke="#3a3f4b" stroke-width="1.5"/>
+                  <circle cx="300" cy="115" r="12" fill="#1a1d24" stroke="#00d4aa" stroke-width="1.5"/>
+                  <circle cx="300" cy="115" r="4" fill="#00d4aa"/>
+                  <path d="M300 103 L200 60 M300 103 L400 60" stroke="#00d4aa" stroke-width="1" opacity="0.3" stroke-dasharray="4 4"/>
+                  <path d="M300 103 L220 70 M300 103 L380 70" stroke="#00d4aa" stroke-width="1" opacity="0.2" stroke-dasharray="4 4"/>
+                  <path d="M100 250 Q200 250 220 225 L380 225 Q400 250 500 250" stroke="#3a3f4b" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+                </svg>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__num mono">PROJECT 01</span>
+                  <span class="project-card__cat mono">Autonomous Systems</span>
+                </div>
+                <h3 class="project-card__title">ORION — Autonomous Material Handling</h3>
+                <p class="project-card__desc">An autonomous mobile robotic platform designed to transport components between manufacturing workstations.</p>
+                <ul class="project-card__tags">
+                  <li>Navigation</li>
+                  <li>Obstacle Detection</li>
+                  <li>Fleet Communication</li>
+                  <li>Automated Docking</li>
+                </ul>
+                <button class="btn btn--outline btn--sm project-card__btn" type="button" data-modal="orion">View Case Study</button>
+              </div>
+            </article>
+
+            <article class="project-card project-card--reverse" data-reveal data-project="lumen">
+              <div class="project-card__visual">
+                <svg viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="600" height="300" fill="#15171c"/>
+                  <pattern id="lumenGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+                    <path d="M30 0 L0 0 0 30" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                  </pattern>
+                  <rect width="600" height="300" fill="url(#lumenGrid)"/>
+                  <rect x="250" y="60" width="100" height="50" rx="4" fill="#1a1d24" stroke="#3a3f4b" stroke-width="1.5"/>
+                  <circle cx="300" cy="85" r="16" fill="#1a1d24" stroke="#4a4f5b" stroke-width="1.5"/>
+                  <circle cx="300" cy="85" r="10" fill="#0a0b0e" stroke="#5a5f6b" stroke-width="1"/>
+                  <circle cx="300" cy="85" r="4" fill="#00d4aa"/>
+                  <path d="M265 105 L200 200 L400 200 L335 105 Z" fill="#00d4aa" opacity="0.05" stroke="#00d4aa" stroke-width="1" stroke-dasharray="3 3"/>
+                  <rect x="230" y="210" width="140" height="20" rx="2" fill="#2a2d35" stroke="#3a3f4b" stroke-width="1"/>
+                  <rect x="260" y="195" width="80" height="15" rx="2" fill="#1a1d24" stroke="#4a4f5b" stroke-width="1.5"/>
+                  <circle cx="285" cy="202" r="3" fill="#ff6b4a" opacity="0.8"/>
+                  <circle cx="310" cy="202" r="3" fill="#00d4aa" opacity="0.8"/>
+                  <text x="420" y="120" fill="#6b7280" font-family="JetBrains Mono, monospace" font-size="9">SCAN: ACTIVE</text>
+                  <text x="420" y="140" fill="#00d4aa" font-family="JetBrains Mono, monospace" font-size="9">DEFECT: DETECTED</text>
+                </svg>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__num mono">PROJECT 02</span>
+                  <span class="project-card__cat mono">Machine Vision</span>
+                </div>
+                <h3 class="project-card__title">LUMEN — Vision Inspection System</h3>
+                <p class="project-card__desc">A machine-vision platform for automated inspection of manufactured components.</p>
+                <ul class="project-card__tags">
+                  <li>Camera-Based Inspection</li>
+                  <li>Defect Detection</li>
+                  <li>Classification</li>
+                  <li>Production-Line Integration</li>
+                </ul>
+                <button class="btn btn--outline btn--sm project-card__btn" type="button" data-modal="lumen">View Case Study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal data-project="atlas">
+              <div class="project-card__visual">
+                <svg viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="600" height="300" fill="#15171c"/>
+                  <pattern id="atlasGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+                    <path d="M30 0 L0 0 0 30" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                  </pattern>
+                  <rect width="600" height="300" fill="url(#atlasGrid)"/>
+                  <rect x="180" y="60" width="240" height="180" rx="4" fill="none" stroke="#3a3f4b" stroke-width="1.5" stroke-dasharray="6 4"/>
+                  <rect x="280" y="200" width="40" height="30" rx="3" fill="#1a1d24" stroke="#3a3f4b" stroke-width="1.5"/>
+                  <rect x="295" y="130" width="10" height="70" rx="2" fill="#1a1d24" stroke="#4a4f5b" stroke-width="1.5"/>
+                  <path d="M300 130 L340 100" stroke="#4a4f5b" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M300 130 L340 100" stroke="#2a2d35" stroke-width="4" stroke-linecap="round"/>
+                  <circle cx="300" cy="130" r="8" fill="#1a1d24" stroke="#5a5f6b" stroke-width="1.5"/>
+                  <circle cx="300" cy="130" r="3" fill="#00d4aa"/>
+                  <circle cx="340" cy="100" r="6" fill="#1a1d24" stroke="#5a5f6b" stroke-width="1.5"/>
+                  <path d="M340 100 L360 90 L360 95 L370 95 L370 100 L360 100 L360 105 Z" fill="#1a1d24" stroke="#4a4f5b" stroke-width="1"/>
+                  <rect x="330" y="85" width="20" height="12" rx="1" fill="#2a2d35" stroke="#00d4aa" stroke-width="1"/>
+                  <rect x="370" y="210" width="30" height="20" rx="2" fill="#1a1d24" stroke="#3a3f4b" stroke-width="1.5"/>
+                  <rect x="200" y="210" width="30" height="20" rx="2" fill="#1a1d24" stroke="#3a3f4b" stroke-width="1.5"/>
+                  <line x1="200" y1="245" x2="400" y2="245" stroke="#4a4f5b" stroke-width="1" stroke-dasharray="2 2"/>
+                  <text x="300" y="260" text-anchor="middle" fill="#6b7280" font-family="JetBrains Mono, monospace" font-size="9">±0.05 mm</text>
+                </svg>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__num mono">PROJECT 03</span>
+                  <span class="project-card__cat mono">Precision Assembly</span>
+                </div>
+                <h3 class="project-card__title">ATLAS — Precision Assembly Cell</h3>
+                <p class="project-card__desc">A robotic assembly cell designed for repeatable high-precision component placement.</p>
+                <ul class="project-card__tags">
+                  <li>Robotic Manipulation</li>
+                  <li>Fixture Positioning</li>
+                  <li>Sensor Feedback</li>
+                  <li>Automated Quality Verification</li>
+                </ul>
+                <button class="btn btn--outline btn--sm project-card__btn" type="button" data-modal="atlas">View Case Study</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ENGINEERING PROCESS ============ -->
+      <section class="section process">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__num mono">05</span>
+            <h2 class="section__title">From Problem to Production.</h2>
+            <p class="section__desc">A structured engineering process that moves from understanding the problem to deploying a supported system.</p>
+          </div>
+
+          <div class="process__timeline">
+            <div class="process__step" data-reveal>
+              <span class="process__num mono">01</span>
+              <h3 class="process__title">Understand</h3>
+              <p class="process__desc">Define the operational problem and requirements.</p>
+            </div>
+            <div class="process__step" data-reveal>
+              <span class="process__num mono">02</span>
+              <h3 class="process__title">Model</h3>
+              <p class="process__desc">Design the system architecture and engineering approach.</p>
+            </div>
+            <div class="process__step" data-reveal>
+              <span class="process__num mono">03</span>
+              <h3 class="process__title">Prototype</h3>
+              <p class="process__desc">Build and test the first working system.</p>
+            </div>
+            <div class="process__step" data-reveal>
+              <span class="process__num mono">04</span>
+              <h3 class="process__title">Validate</h3>
+              <p class="process__desc">Measure performance under realistic conditions.</p>
+            </div>
+            <div class="process__step" data-reveal>
+              <span class="process__num mono">05</span>
+              <h3 class="process__title">Deploy</h3>
+              <p class="process__desc">Integrate, document, and support the final solution.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="about__grid">
+            <div class="about__content" data-reveal>
+              <span class="section__num mono">06</span>
+              <h2 class="section__title">Engineering First. Always.</h2>
+              <p class="about__text">Astra Robotics brings together mechanical engineering, electronics, embedded systems, sensing, and software to create practical automation systems.</p>
+              <p class="about__text">The emphasis is on measurable engineering outcomes, reliability, maintainability, and purposeful automation.</p>
+            </div>
+            <div class="about__visual" data-reveal aria-hidden="true">
+              <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <pattern id="aboutGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M40 0 L0 0 0 40" stroke="rgba(255,255,255,0.04)" stroke-width="1" fill="none"/>
+                </pattern>
+                <rect width="400" height="400" fill="url(#aboutGrid)"/>
+                <circle cx="200" cy="200" r="160" stroke="#2a2d35" stroke-width="1" fill="none"/>
+                <circle cx="200" cy="200" r="120" stroke="#2a2d35" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+                <circle cx="200" cy="200" r="80" stroke="#3a3f4b" stroke-width="1" fill="none"/>
+                <line x1="200" y1="20" x2="200" y2="60" stroke="#3a3f4b" stroke-width="1"/>
+                <line x1="200" y1="340" x2="200" y2="380" stroke="#3a3f4b" stroke-width="1"/>
+                <line x1="20" y1="200" x2="60" y2="200" stroke="#3a3f4b" stroke-width="1"/>
+                <line x1="340" y1="200" x2="380" y2="200" stroke="#3a3f4b" stroke-width="1"/>
+                <circle cx="200" cy="200" r="30" stroke="#00d4aa" stroke-width="1.5" fill="none"/>
+                <circle cx="200" cy="200" r="14" stroke="#00d4aa" stroke-width="1.5" fill="none"/>
+                <circle cx="200" cy="200" r="4" fill="#00d4aa"/>
+                <g stroke="#00d4aa" stroke-width="1.5" fill="none">
+                  <line x1="200" y1="164" x2="200" y2="170"/>
+                  <line x1="200" y1="230" x2="200" y2="236"/>
+                  <line x1="164" y1="200" x2="170" y2="200"/>
+                  <line x1="230" y1="200" x2="236" y2="200"/>
+                  <line x1="175" y1="175" x2="179" y2="179"/>
+                  <line x1="221" y1="221" x2="225" y2="225"/>
+                  <line x1="225" y1="175" x2="221" y2="179"/>
+                  <line x1="179" y1="221" x2="175" y2="225"/>
+                </g>
+                <path d="M40 40 L40 70 M40 40 L70 40" stroke="#3a3f4b" stroke-width="1.5"/>
+                <path d="M360 40 L360 70 M360 40 L330 40" stroke="#3a3f4b" stroke-width="1.5"/>
+                <path d="M40 360 L40 330 M40 360 L70 360" stroke="#3a3f4b" stroke-width="1.5"/>
+                <path d="M360 360 L360 330 M360 360 L330 360" stroke="#3a3f4b" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ METRICS ============ -->
+      <section class="metrics" aria-label="Capabilities overview">
+        <div class="container">
+          <div class="metrics__grid">
+            <div class="metric" data-reveal>
+              <span class="metric__num">06</span>
+              <span class="metric__label mono">Core Solution Areas</span>
+            </div>
+            <div class="metric" data-reveal>
+              <span class="metric__num">05</span>
+              <span class="metric__label mono">Engineering Stages</span>
+            </div>
+            <div class="metric" data-reveal>
+              <span class="metric__num">03</span>
+              <span class="metric__label mono">Featured Systems</span>
+            </div>
+            <div class="metric" data-reveal>
+              <span class="metric__num">01</span>
+              <span class="metric__label mono">Integrated Philosophy</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="contact__grid">
+            <div class="contact__content" data-reveal>
+              <span class="section__num mono">07</span>
+              <h2 class="section__title">Have a Complex Problem?</h2>
+              <p class="contact__text">Let's turn it into an engineered system.</p>
+              <div class="contact__actions">
+                <a href="#contact-form" class="btn btn--primary">Start a Project</a>
+                <a href="#projects" class="btn btn--outline">Explore Our Work</a>
+              </div>
+            </div>
+
+            <div class="contact__form-wrap" data-reveal>
+              <form class="contact-form" id="contact-form" novalidate>
+                <div class="contact-form__row">
+                  <div class="contact-form__field">
+                    <label for="cf-name" class="contact-form__label">Name</label>
+                    <input type="text" id="cf-name" name="name" class="contact-form__input" required autocomplete="name" />
+                    <span class="contact-form__error" data-error-for="name" role="alert" aria-live="assertive"></span>
+                  </div>
+                  <div class="contact-form__field">
+                    <label for="cf-company" class="contact-form__label">Company</label>
+                    <input type="text" id="cf-company" name="company" class="contact-form__input" autocomplete="organization" />
+                  </div>
+                </div>
+                <div class="contact-form__field">
+                  <label for="cf-email" class="contact-form__label">Email</label>
+                  <input type="email" id="cf-email" name="email" class="contact-form__input" required autocomplete="email" />
+                  <span class="contact-form__error" data-error-for="email" role="alert" aria-live="assertive"></span>
+                </div>
+                <div class="contact-form__field">
+                  <label for="cf-type" class="contact-form__label">Project Type</label>
+                  <select id="cf-type" name="projectType" class="contact-form__input contact-form__select" required>
+                    <option value="" disabled selected>Select a project type</option>
+                    <option value="industrial-automation">Industrial Automation</option>
+                    <option value="robotics">Robotics</option>
+                    <option value="machine-vision">Machine Vision</option>
+                    <option value="embedded-systems">Embedded Systems</option>
+                    <option value="autonomous-systems">Autonomous Systems</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="contact-form__error" data-error-for="projectType" role="alert" aria-live="assertive"></span>
+                </div>
+                <div class="contact-form__field">
+                  <label for="cf-desc" class="contact-form__label">Project Description</label>
+                  <textarea id="cf-desc" name="description" class="contact-form__input contact-form__textarea" rows="4" required></textarea>
+                  <span class="contact-form__error" data-error-for="description" role="alert" aria-live="assertive"></span>
+                </div>
+                <button type="submit" class="btn btn--primary btn--block">Submit Inquiry</button>
+                <p class="contact-form__note mono">Demo contact form — no data is transmitted.</p>
+              </form>
+
+              <div class="contact-form__success" id="contact-success" role="status" aria-live="polite" hidden>
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="22" stroke="#00d4aa" stroke-width="1.5" fill="none"/>
+                  <path d="M16 24 L22 30 L34 18" stroke="#00d4aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3 class="contact-form__success-title">Inquiry Received</h3>
+                <p class="contact-form__success-text">Thank you for your interest. This is a demo contact form — no data has been transmitted or stored. In a production deployment, your inquiry would be routed to our engineering team.</p>
+                <button type="button" class="btn btn--outline btn--sm" id="contact-reset">Submit Another</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="#hero" class="footer__logo" aria-label="Astra Robotics — home">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M16 2 L28 28 L16 22 L4 28 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+                <circle cx="16" cy="16" r="2.5" fill="currentColor"/>
+                <path d="M16 18.5 L16 22" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <span class="footer__wordmark">ASTRA <span class="footer__wordmark-accent">ROBOTICS</span></span>
+            </a>
+            <p class="footer__tagline">Engineering Intelligence Into Motion.</p>
+          </div>
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <a href="#solutions">Solutions</a>
+            <a href="#technology">Technology</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__note">© 2026 Astra Robotics. Portfolio demonstration project.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/ayush-raj-a63a8a428/" class="footer__social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Ayura-Works/Astra-Robotics" class="footer__social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#" class="footer__social-link" rel="noopener noreferrer">X</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" type="button">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M10 4 L10 16 M4 10 L10 4 L16 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <!-- ============ PROJECT MODAL ============ -->
+    <div class="modal" id="projectModal" aria-modal="true" aria-labelledby="modalTitle" hidden>
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__dialog">
+        <button class="modal__close" id="modalClose" aria-label="Close dialog" type="button">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M5 5 L15 15 M15 5 L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="modal__content" id="modalContent"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/js/script.js"></script>
+  </body>
+</html>
